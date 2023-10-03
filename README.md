@@ -99,3 +99,17 @@ Se elimino a Juan Santana Ruiz
 1. Para actualizar la ciudad de nacimiento de Cristian Vanegas, cuya identificacion es 114
 `UPDATE Ventas SET ciudad_nac = 'Pereira' WHERE identificacion=114`
 ![update](./img/update1.png "update 1")
+
+## Creación tabla pedido 
+### Diccionario de datos
+|campo|tipo de datos|longitud|
+|-----|-------------|--------|
+|***No_pedido**| varchar|15|
+|iden_cliente|varchar|15|
+|Fecha_compra|date||
+|Fecha_vencimiento|date||
+|observacion|varchar|30|
+
+
+![pedido](./img/Pedido2.png "Pedido 2")
+![pedido](./img/Pedido1.png "Pedido 1")
