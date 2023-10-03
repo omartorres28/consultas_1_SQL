@@ -14,7 +14,7 @@
 1. Para visualizar toda la informacion que contiene la tabla Cliente se puede incluir con la instruccion SELECT el caracter **\*** o cada uno de los campos de la tabla.
 
 - `SELECT * FROM Cliente`
-![Tabla Cliente](./img/cliente1_1.png "Tabla consulta1_2")
+![Consulta](./img/cliente1_1.png "Tabla consulta1_2")
 - `SELECT identificacion, nombre, apellidos,direccion, telefono, ciudad_nac, fecha_nac FROM Cliente`
 ![Tabla Cliente](consulta1_2.png "Tabla consulta 2")
 
@@ -46,6 +46,15 @@ o se puede utilizar el operador `OR`
 
 5. Se desea obtener los registros cuya identificacion sea menor de 110 y la ciudad sea Cali, se debe utilizar el operador `AND`
 
-SELECT * FROM Cliente WHERE identificion<=110 AND ciudad = 'Cali'
+`SELECT * FROM Cliente WHERE identificion<=110 AND ciudad = 'Cali'`
 
 ![Consulta](./img/consulta5.png "consulta 5")
+
+
+### Consulta No.6 
+
+6. Si se desea obtener los registros cuyos nombres empiecen por la letra `A`, se debe utilizar el operador `LIKE` que utiliza los patrones `%` (todos) y `_` (caracter). 
+
+`SELECT * FROM Ventas WHERE Nombre LIKE 'A%'`
+
+![Consulta](./img/consulta6.png "consulta 6")
