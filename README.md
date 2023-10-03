@@ -58,3 +58,5 @@ o se puede utilizar el operador `OR`
 `SELECT * FROM Ventas WHERE Nombre LIKE 'A%'`
 
 ![Consulta](./img/consulta6.png "consulta 6")
+
+
