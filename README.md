@@ -75,3 +75,15 @@ o se puede utilizar el operador `OR`
 9. Si se desea obtener los registros cuya identificacion este entre el intervalo 110 y 150, se debe utilizar la clasula `BETWEEN`, que sirve para especificar un intervalo de valores 
 `SELECT * FROM Ventas WHERE identificacion BETWEEN 110 AND 150`
 ![Consulta](./img/consulta9.png "consulta 9")
+
+## Instruccion DELETE
+- Permite borrar todos o un grupo especifico de una tabla.
+- Su formato es: `DELETE FROM nombre_tabla`
+
+### Eliminación No.1
+
+1. Eliminar los registros cuya identificacion sea mayor a 170.
+
+`DELETE FROM Ventas WHERE identificacion > 9635561`
+![delte](./img/delete1.png "delete 1")
+Se elimino a Juan Santana Ruiz
