@@ -87,3 +87,15 @@ o se puede utilizar el operador `OR`
 `DELETE FROM Ventas WHERE identificacion > 9635561`
 ![delte](./img/delete1.png "delete 1")
 Se elimino a Juan Santana Ruiz
+
+2. Eliminar los registros cuya identificacion sea igual a 116
+`DELETE FROM Ventas WHERE identificacion = 116`
+
+## Instruccion UPDATE
+- Permite actualizar un campo de tabla.
+- Su formato es: `UPDATE nombre_tabla SET nombre_campo = valor`
+
+### Actualización 
+1. Para actualizar la ciudad de nacimiento de Cristian Vanegas, cuya identificacion es 114
+`UPDATE Ventas SET ciudad_nac = 'Pereira' WHERE identificacion=114`
+![update](./img/update1.png "update 1")
