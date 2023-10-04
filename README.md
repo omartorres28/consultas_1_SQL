@@ -4,7 +4,7 @@
 ## Base de datos: Ventas
 ## Tabla: Cliente
 
-![Tabla Cliente](./img/ejemplo1.png.png "Tabla Cliente")
+![Tabla Cliente](./img/ejemplo1.png "Tabla Cliente")
 
 ## Instruccion SELECT
 - Permite seleccionar datos de una tabla.
@@ -14,9 +14,9 @@
 1. Para visualizar toda la informacion que contiene la tabla Cliente se puede incluir con la instruccion SELECT el caracter **\*** o cada uno de los campos de la tabla.
 
 - `SELECT * FROM Cliente`
-![Consulta](./img/cliente1_1.png "Tabla consulta1_2")
+![Consulta](./img/clientes1_1.png "Tabla consulta1_2")
 - `SELECT identificacion, nombre, apellidos,direccion, telefono, ciudad_nac, fecha_nac FROM Cliente`
-![Tabla Cliente](consulta1_2.png "Tabla consulta 2")
+![Tabla Cliente](./img/consulta1_2.png "Tabla consulta 2")
 
 ### Consulta No. 2
 
@@ -110,6 +110,21 @@ Se elimino a Juan Santana Ruiz
 |Fecha_vencimiento|date||
 |observacion|varchar|30|
 
+### Tabla: Pedido
 
-![pedido](./img/Pedido2.png "Pedido 2")
 ![pedido](./img/Pedido1.png "Pedido 1")
+
+### Modelo Entidad-Relación 
+ 
+![pedido](./img/Pedido2.png "Pedido 2")
+
+
+## Operador Inner Join 
+- Permite obtener datos de dos o más tablas 
+- Cuando se realiza la concatenación de las tablas no necesariamente se deben mostrar todos los datos de las tablas. - Su formato es:
+`SELECT tabla1.campo, tabla2.campo ... FROM tabla_principal INNER JOIN tabla_secundaria ON campo_comun_tabla1 = campo_comun_tabla2`
+
+1. Para vizualizar los campos identificación, nombre, apellidos de las tablas Cliente y no_pedido, fecha_compra, fecha_vencimiento y observación de la tabla Pedido, se debe realizar la siguiente instrucción:
+`SELECT Ventas.identificación, Ventas.nombre, Ventas.apellidos, Pedido.no_pedido, Pedido.fecha_compra, Pedido.fecha_vencimiento, Pedido.observacion FROM Ventas INNER JOIN Pedido ON Ventas.identificacion = Pedido.iden_cliente`
+
+![inner join](./img/INNERJOIN1.png "inner join")
